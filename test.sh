@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=0 torchrun --master_port=7777 --nproc_per_node=1 train.py -c configs/deim_dfine/deim_hgnetv2_n_cotton.yml --test-only -r /home/adminpc/worksapce/DEIMresult/output/deim_hgnetv2_n_cotton/best_stg2.pth
+# CUDA_VISIBLE_DEVICES=0 torchrun --master_port=7777 --nproc_per_node=1 train.py -c configs/deim_dfine/dfine_hgnetv2_n_cotton.yml --test-only -r /home/adminpc/worksapce/DEIMresult/output/dfine_hgnetv2_n_cotton/best_stg1.pth
