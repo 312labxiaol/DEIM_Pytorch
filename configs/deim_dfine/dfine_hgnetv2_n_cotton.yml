@@ -1,6 +1,6 @@
 __include__: [
   # '../dataset/coco_detection.yml',
-  '/home/adminpc/worksapce/DEIM/configs/dataset/cotton_detection.yml',
+  '/home/adminpc/worksapce/DEIM_Pytorch/configs/dataset/cotton_detection.yml',
   '../runtime.yml',
   '../base/dataloader.yml',
   '../base/optimizer.yml',
