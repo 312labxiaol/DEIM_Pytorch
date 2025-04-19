@@ -11,8 +11,8 @@ train_dataloader:
   type: DataLoader
   dataset:
     type: CocoDetection
-    img_folder: /home/adminpc/worksapce/dataset/dataset_cotton/cotton-DET-train/images
-    ann_file: /home/adminpc/worksapce/dataset/dataset_cotton/cotton-DET-train/annotations/train.json
+    img_folder: /home/adminpc/workspace/dataset/dataset_cotton/cotton-DET-train/images
+    ann_file: /home/adminpc/workspace/dataset/dataset_cotton/cotton-DET-train/annotations/train.json
     return_masks: False
     transforms:
       type: Compose
@@ -28,8 +28,8 @@ val_dataloader:
   type: DataLoader
   dataset:
     type: CocoDetection
-    img_folder: /home/adminpc/worksapce/dataset/dataset_cotton/cotton-DET-val/images
-    ann_file: /home/adminpc/worksapce/dataset/dataset_cotton/cotton-DET-val/annotations/val.json
+    img_folder: /home/adminpc/workspace/dataset/dataset_cotton/cotton-DET-val/images
+    ann_file: /home/adminpc/workspace/dataset/dataset_cotton/cotton-DET-val/annotations/val.json
     return_masks: False
     transforms:
       type: Compose
@@ -45,8 +45,8 @@ val_dataloader:
 #   type: DataLoader
 #   dataset:
 #     type: CocoDetection
-#     img_folder: /home/adminpc/worksapce/dataset/dataset_cotton/cotton-DET-test-dev/images
-#     ann_file: /home/adminpc/worksapce/dataset/dataset_cotton/cotton-DET-test-dev/annotations/test.json
+#     img_folder: /home/adminpc/workspace/dataset/dataset_cotton/cotton-DET-test-dev/images
+#     ann_file: /home/adminpc/workspace/dataset/dataset_cotton/cotton-DET-test-dev/annotations/test.json
 #     return_masks: False
 #     transforms:
 #       type: Compose
