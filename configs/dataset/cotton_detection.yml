@@ -2,7 +2,7 @@ task: detection
 
 evaluator:
   type: CocoEvaluator
-  iou_types: ['bbox', ]
+  iou_types: ["bbox"]
 
 num_classes: 1 # your dataset classes
 remap_mscoco_category: False
@@ -11,8 +11,8 @@ train_dataloader:
   type: DataLoader
   dataset:
     type: CocoDetection
-    img_folder: /home/adminpc/workspace/dataset/dataset_cotton/cotton-DET-train/images
-    ann_file: /home/adminpc/workspace/dataset/dataset_cotton/cotton-DET-train/annotations/train.json
+    img_folder: /home/adminpc/workspace/dataset4cotton/dataset_cotton/cotton-DET-train/images
+    ann_file: /home/adminpc/workspace/dataset4cotton/dataset_cotton/cotton-DET-train/annotations/train.json
     return_masks: False
     transforms:
       type: Compose
@@ -23,13 +23,12 @@ train_dataloader:
   collate_fn:
     type: BatchImageCollateFunction
 
-
 val_dataloader:
   type: DataLoader
   dataset:
     type: CocoDetection
-    img_folder: /home/adminpc/workspace/dataset/dataset_cotton/cotton-DET-val/images
-    ann_file: /home/adminpc/workspace/dataset/dataset_cotton/cotton-DET-val/annotations/val.json
+    img_folder: /home/adminpc/workspace/dataset4cotton/dataset_cotton/cotton-DET-val/images
+    ann_file: /home/adminpc/workspace/dataset4cotton/dataset_cotton/cotton-DET-val/annotations/val.json
     return_masks: False
     transforms:
       type: Compose
@@ -39,14 +38,13 @@ val_dataloader:
   drop_last: False
   collate_fn:
     type: BatchImageCollateFunction
-
 # # test
 # val_dataloader:
 #   type: DataLoader
 #   dataset:
 #     type: CocoDetection
-#     img_folder: /home/adminpc/workspace/dataset/dataset_cotton/cotton-DET-test-dev/images
-#     ann_file: /home/adminpc/workspace/dataset/dataset_cotton/cotton-DET-test-dev/annotations/test.json
+#     img_folder: /home/adminpc/workspace/dataset4cotton/dataset_cotton/cotton-DET-test-dev/images
+#     ann_file: /home/adminpc/workspace/dataset4cotton/dataset_cotton/cotton-DET-test-dev/annotations/test.json
 #     return_masks: False
 #     transforms:
 #       type: Compose
